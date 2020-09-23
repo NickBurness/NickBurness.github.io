@@ -1,119 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="/styles.css" />
-</head>
+    <script
+      src="https://kit.fontawesome.com/7d24bb24b2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    <section class="gridContainer">
-        <header>
-            <hgroup>
-                <h1 class="decorative">🍕 connoisseur</h1>
-                <h1 class="decorative">☕ addict</h1>
-                <h1 class="decorative">👨‍💻 web developer</h1>
-            </hgroup>
-        </header>
+  <body class="lm">
+    <section class="grid">
+      <header class="lm">
+        <h1 class="headerText">🍕 connoisseur</h1>
+        <h1 class="headerText">☕ addict</h1>
+        <h1 class="headerText">👨‍💻 web developer</h1>
+      </header>
 
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact Me</a>
+      <a id="lightswitch" onclick="toggleLight()">🌚</a>
+
+      <div class="navContainer">
+        <a id="navButton" class="navButton" onclick="toggleNav()">
+          <i id="toggleIcon" class="fas fa-bars"></i>
+        </a>
+        <nav class="navMenu hidden" id="navMenu">
+          <a id="navLink" class="navLink lm" href="#about">About</a>
+          <a id="navLink" class="navLink lm" href="#projects">Projects</a>
+          <a id="navLink" class="navLink lm" href="#contact">Contact</a>
         </nav>
+      </div>
 
-        <section id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam suscipit a cumque rem
-            modi amet facere, doloremque tenetur animi, dolorem praesentium fugit autem doloribus necessitatibus
-            consequuntur ratione officiis obcaecati quod!Loremlorem Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Ex, temporibus? Assumenda pariatur eligendi eaque, aliquid veritatis amet molestiae. Tempore eligendi
-            corporis nobis sed quis ullam, voluptates assumenda nihil ducimus sint. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Assumenda ratione repellendus tenetur possimus vel libero inventore,
-            consectetur saepe accusantium natus quia voluptatibus, enim non soluta ad voluptas ipsum quidem maiores.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptates ex! Illo saepe laboriosam
-            repellat quia molestias, labore reprehenderit facere aliquam iste optio dolorum distinctio sed nihil quasi
-            aliquid excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit nemo sint.
-            Doloribus exercitationem quasi maiores non alias dolorem voluptatibus explicabo iste aperiam vel tempora,
-            assumenda ad rem facere error? lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi maxime
-            quaerat accusantium vero temporibus. Quod, fuga ducimus, tenetur dolor rem ullam nostrum reprehenderit quia
-            ipsa repudiandae nam nesciunt est quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nam
-            beatae reiciendis repellendus repudiandae. Pariatur ex eos odit porro hic ea molestias est id reiciendis
-            explicabo voluptates, atque eum quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
-            illo corrupti aperiam impedit iure nesciunt animi culpa corporis, labore illum consequatur beatae earum
-            suscipit dolore omnis harum iste, nulla deserunt!</section>
-        <section id="projects">
-            <div class="project-container">
-                <h3>Swiggy</h3>
-                <img src="./images/swiggy.png" alt="the logo for swiggy, a discord bot" />
-                <p>A Discord community Bot</p>
-            </div>
+      <section id="about">
+        <h2>Great you made it this far!</h2>
+        <p>
+          Let me tell you a little about myself seeing as you're sticking
+          around.
+        </p>
+        <p>
+          I started learning to code and developing websites mid 2019. Shortly getting my first role at the start of 2020.
+        </p>
+      </section>
 
-            <div class="project-container">
-                <h3>Avenue</h3>
-                <img src="./images/avenue.png" alt="a preview of a conceptual real estate website 'Avenue'" />
-                <p>A complete theme for a conceptual real estate agency I created.</p>
-            </div>
+      <section id="projects">
+        <div class="projectContainer">
+          <h3 class="projectTitle">Swiggy</h3>
+          <img
+            src="./images/swiggy.png"
+            alt="Avatar image for Swiggy, A Discord bot."
+          />
+          <div class="projectOverlay">
+            <p class="projectDescription">
+              Swiggy is a feature rich personal hobby project of my own I
+              created for me and my friends to enjoy on Discord. Theres even set
+              up instructions available in the GitHub to integrade Swiggy into
+              your own Discord channel.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <div class="project-container">
-                <h3>coffee break games</h3>
-                <img src="./images/js_games.png" alt="a preview of a website that holds a collection of browser games I developed" />
-                <p>A website I created holding a collection of browser based games you can play</p>
-            </div>
-
-        </section>
-        <section id="contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat ex, nesciunt
-            dolorem, laborum non iure sapiente et exercitationem deleniti temporibus. Recusandae vero minus nobis
-            quibusdam quia reprehenderit optio facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            voluptatibus accusantium ullam tenetur iusto. Minus iure distinctio fugiat fuga consequatur. Temporibus
-            error, minima culpa labore sint quaerat eum maxime laboriosam? Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Amet, eum? Impedit placeat magnam velit sit autem maxime ea nemo? Nihil modi corrupti
-            aliquam, eius sit et quos totam explicabo id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            mollitia aperiam maiores officiis iure repudiandae, ullam deserunt consectetur blanditiis, vel voluptatibus
-            esse, voluptates labore hic eveniet magnam veniam laboriosam provident? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Unde corporis ea dolorum, molestiae ad velit distinctio nihil tempora optio
-            eveniet doloremque rerum asperiores placeat quis quos laboriosam nostrum ut neque. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Omnis deleniti non sint. Quis molestias ab id, eveniet illo veniam
-            nesciunt ducimus harum, hic sapiente magnam sed cum dolore adipisci qui. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Quisquam quam officiis fugit ut, placeat ratione tempora deserunt asperiores
-            temporibus facere maxime voluptatem sapiente, reprehenderit delectus nisi iste. Illum, perferendis Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Illo soluta at modi voluptates non! Maiores, nihil?
-            Repudiandae, amet quam soluta veritatis iste in quasi illum quod sit laboriosam, cupiditate repellat! Lorem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima sed saepe molestias modi cum
-            possimus ratione non pariatur ipsa esse molestiae, nulla illum ut tempore natus reprehenderit quia quidem.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores qui inventore odio dicta placeat maxime
-            vel dolor amet, assumenda atque excepturi repudiandae magnam nihil, iure enim velit mollitia, reiciendis
-            suscipit? lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, consectetur alias
-            nesciunt voluptas soluta fuga voluptatum sed inventore laboriosam impedit suscipit, ex harum mollitia ad
-            dicta aut dolor sequi esse. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In eum, vel fugiat
-            voluptatem enim, modi laudantium quam expedita beatae temporibus sit magni! Esse ullam doloribus
-            necessitatibus non harum voluptatem. Quis? iure? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Debitis quaerat ex, nesciunt
-            dolorem, laborum non iure sapiente et exercitationem deleniti temporibus. Recusandae vero minus nobis
-            quibusdam quia reprehenderit optio facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            voluptatibus accusantium ullam tenetur iusto. Minus iure distinctio fugiat fuga consequatur. Temporibus
-            error, minima culpa labore sint quaerat eum maxime laboriosam? Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Amet, eum? Impedit placeat magnam velit sit autem maxime ea nemo? Nihil modi corrupti
-            aliquam, eius sit et quos totam explicabo id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            mollitia aperiam maiores officiis iure repudiandae, ullam deserunt consectetur blanditiis, vel voluptatibus
-            esse, voluptates labore hic eveniet magnam veniam laboriosam provident? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Unde corporis ea dolorum, molestiae ad velit distinctio nihil tempora optio
-            eveniet doloremque rerum asperiores placeat quis quos laboriosam nostrum ut neque. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Omnis deleniti non sint. Quis molestias ab id, eveniet illo veniam
-            nesciunt ducimus harum, hic sapiente magnam sed cum dolore adipisci qui. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Quisquam quam officiis fugit ut, placeat ratione tempora deserunt asperiores
-            temporibus facere maxime voluptatem sapiente, reprehenderit delectus nisi iste. Illum, perferendis Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Illo soluta at modi voluptates non! Maiores, nihil?
-            Repudiandae, amet quam soluta veritatis iste in quasi illum quod sit laboriosam, cupiditate repellat! Lorem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima sed saepe molestias modi cum
-            possimus ratione non pariatur ipsa esse molestiae, nulla illum ut tempore natus reprehenderit quia quidem.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores qui inventore odio dicta placeat maxime
-            vel dolor amet, assumenda atque excepturi repudiandae magnam nihil, iure enim velit mollitia, reiciendis
-            suscipit? lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, consectetur alias
-            nesciunt voluptas soluta fuga voluptatum sed inventore laboriosam impedit suscipit, ex harum mollitia ad
-            dicta aut dolor sequi esse. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In eum, vel fugiat
-            voluptatem enim, modi laudantium quam expedita beatae temporibus sit magni! Esse ullam doloribus
-            necessitatibus non harum voluptatem. Quis? iure?</section>
-
+      <section id="contact">
+        <a href="https://www.github.com/NickBurness" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.twitter.com/cleanCodeNick" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </section>
     </section>
-</body>
-
+  </body>
+  <script src="site.js" type="text/javascript"></script>
 </html>

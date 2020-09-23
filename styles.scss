@@ -1,9 +1,8 @@
-$base: #fdfdfd;
-$text: #2f2f2f;
-$feature-base: #536b78;
-$feature-text: #cee5f2;
-$border: #7c98b3;
 $link: #3099df;
+$lm-base: #fdfdfd;
+$lm-text: #2f2f2f;
+$dm-base: #2f2f2f;
+$dm-text: #fdfdfd;
 
 * {
   padding: 0;
@@ -13,97 +12,181 @@ $link: #3099df;
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: $base;
-  color: $text;
+  background: $lm-base;
+  color: $lm-text;
 }
 
-.gridContainer {
+.dm {
+  background-color: $dm-base;
+  color: $dm-text;
+}
+
+.lm {
+  background-color: $lm-base;
+  color: $lm-text;
+}
+
+.grid {
   display: grid;
   grid-template-areas:
     "head head"
-    "nav about"
-    "nav project"
-    "nav contact";
+    "about about"
+    "project project"
+    "contact contact";
   grid-template-rows: 100vh 1fr 1fr 1fr;
-  grid-template-columns: 1fr 4fr;
 }
 
 header {
   grid-area: head;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $feature-base;
-  padding-bottom: 1em;
   width: 100%;
+}
+
+#lightswitch {
+  position: fixed;
+  user-select: none;
+  top: 0px;
+  left: 0px;
+  font-size: 2em;
+  padding-left: 0.5em;
+}
+
+a {
+  cursor: pointer;
+  z-index: 1;
+}
+
+.headerText {
+  font-size: 2em;
+  padding: 1rem;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+}
+
+.navButton {
+  justify-content: end;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  border: none;
+  text-align: end;
+  font-size: 2em;
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+}
+
+#navMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+#navMenu a {
+  background-color: transparent;
+  color: inherit;
+}
+
+#navMenu a:hover {
+  color: $link;
+}
+
+.hidden {
+  transform: translateX(100%);
+}
+
+.navLink {
+  padding-top: 1em;
+  font-size: 1.5em;
+  text-align: end;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #about {
   grid-area: about;
-  background-color: $feature-text;
-  color: $feature-base;
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  border-radius: 5px;
+}
+
+img {
+  object-fit: contain;
+  align-self: flex-end;
+  border-radius: 5px;
 }
 
 #projects {
   grid-area: project;
-  background-color: $feature-base;
-  color: $feature-text;
   display: flex;
 }
 
-.project-container {
+.projectContainer {
+  display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  margin: 2em;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 5px;
+}
+
+.projectOverlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  background-color: rgb(140, 0, 255);
+  transform: translateY(50%);
+  border-radius: 5px;
+}
+
+.projectContainer:hover .projectOverlay {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.projectTitle {
+  text-align: center;
+  font-size: 2em;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.projectDescription {
+  margin: 0 1em 0 1em;
 }
 
 #contact {
   grid-area: contact;
-  background-color: $feature-text;
-  color: $feature-base;
-}
-
-nav {
-  grid-area: nav;
   display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  padding: 0.5em 0 0.5em 1em;
-  position: fixed;
-  transform: translateY(80vh);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-hgroup {
-  color: $feature-text;
+#contact a {
+  margin: 1em;
+  font-size: 5em;
 }
 
-.decorative {
-  color: $feature-text;
-  font-size: 2em;
-  padding: 0.5em 0 0 1em;
-}
-
-nav a {
-  padding-top: 1em;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  overflow: hidden;
-  background: linear-gradient(to right, $link, $link 50%, $feature-text 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 275ms ease-in;
-}
-
-nav a:hover {
-  background-position: 0 100%;
-  text-decoration-line: underline;
-  text-decoration-color: $link;
-}
-
-.section {
-  display: flex;
+#contact a:hover {
+  color: $link;
 }
