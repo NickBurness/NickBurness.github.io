@@ -26,13 +26,3 @@ function toggleLight() {
     let headerClass = header.className;
     header.className = headerClass === "lm" ? "dm" : "lm";
 }
-
-function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("demo").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-  }
-
-document.onload(typeWriter());
