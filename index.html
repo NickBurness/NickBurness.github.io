@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="/styles.css" />
     <script
       src="https://kit.fontawesome.com/7d24bb24b2.js"
@@ -25,48 +26,117 @@
         </a>
         <nav class="navMenu hidden" id="navMenu">
           <a id="navLink" class="navLink lm" href="#about">About</a>
+          <a id="navLink" class="navLink lm" href="#timeline">Timeline</a>
           <a id="navLink" class="navLink lm" href="#projects">Projects</a>
-          <a id="navLink" class="navLink lm" href="#contact">Contact</a>
+          <a id="navLink" class="navLink lm" href="#footer">Socials</a>
         </nav>
       </div>
 
       <section id="about">
         <h2>Great you made it this far!</h2>
         <p>
-          Let me tell you a little about myself seeing as you're sticking
-          around.
+          Let me tell you a little about myself seeing as you're here.
         </p>
         <p>
-          I started learning to code and developing websites mid 2019. Shortly getting my first role at the start of 2020.
+          I'm Nick. I was born in Newcastle Upon Tyne but now I am living in Manchester. I started learning to code a short while
+          ago around july 2019 landing my first role as an apprentice .NET Developer by the start of 2020.
         </p>
+        <p>When im not practicing code and working you can find me cooking and/or binge watching the latest TV/Films.</p>
+        <p>You can check out some of my projects here or explore some of what i've worked on here on <a class="inlineLink" href="https://codepen.io/nickburness">CodePen</a> or <a class="inlineLink" href="https://www.github.com/NickBurness">GitHub</a>.</p>
       </section>
 
-      <section id="projects">
-        <div class="projectContainer">
-          <h3 class="projectTitle">Swiggy</h3>
-          <img
-            src="./images/swiggy.png"
-            alt="Avatar image for Swiggy, A Discord bot."
-          />
-          <div class="projectOverlay">
-            <p class="projectDescription">
-              Swiggy is a feature rich personal hobby project of my own I
-              created for me and my friends to enjoy on Discord. Theres even set
-              up instructions available in the GitHub to integrade Swiggy into
-              your own Discord channel.
+      <section id="timeline">
+        <h2 class="sectionHeader">Timeline</h2>
+        <img
+          src="http://ghchart.rShah.org/3099df/NickBurness"
+          alt="NickBurness's Github chart"
+        />
+        <div class="timelineContainer left bottom">
+          <div class="timelineContent">
+            <div class="timelineBox">
+              <h2>Recode</h2>
+              <div class="languageIcons">
+                <i class="fab fa-html5 html5"></i>
+                <i class="fab fa-css3-alt css"></i>
+                <i class="fab fa-js js"></i>
+              </div>
+            </div>
+            <p>
+              I was introduced to code and began my journey into tech here.
+              Recode's 12 week beginner bootcamp taught me the very basics of
+              Html, CSS & JavaScript and filled me with the confidence I needed
+              to get going.
+            </p>
+          </div>
+        </div>
+        <div class="timelineContainer right bottom">
+          <div class="timelineContent">
+            <div class="timelineAltBox">
+            <h2 class="timelineHeader DaysOfCode">#100DaysOfCode</h2>
+            <div class="languageIcons">
+              <i class="fab fa-html5 html5"></i>
+              <i class="fab fa-css3-alt css"></i>
+              <i class="fab fa-js js"></i>
+            </div>
+          </div>
+            <p>
+              I continued to self study and took part in this challenge. 100
+              Days continously for atleast 1 hour per day to become more
+              comfortable developing for the web and become ready for
+              employment! It worked by the way.
+            </p>
+          </div>
+        </div>
+        <div class="timelineContainer left">
+          <div class="timelineContent">
+            <div class="timelineBox">
+            <h2>Department For Education</h2>
+            <div class="languageIcons">
+              <i class="fab fa-js js"></i>
+              <i class="fas fa-database db"></i>
+              <i class="fab fa-git-alt git"></i>
+              <i class="fab fa-sass sass"></i>
+              <i class="fab fa-html5 html5"></i>
+            </div>
+          </div>
+            <p>
+              In January 2020 I started a full time career as an apprentice .Net software
+              developer. I've seen huge growth in my abilities and have had many opportunities to
+              showcase my skills. Contributing to almost all stages of the development lifecycle. Usually i'll be working with
+              ASP.NetCore, JavaScript, SASS & MySQL to deliver MVC applications
+              that support all students of all ages and teachers accross the UK.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="contact">
+      <section id="projects">
+        <div class="projectContainer">
+          <img
+            src="./images/swiggy.png"
+            alt="Avatar image for Swiggy, A Discord bot." />
+          <h3 class="projectTitle">Swiggy</h3>
+          <div class="projectOverlay">
+            <p class="projectDescription">
+              Swiggy is a feature rich Discord Bot I conjured up as a hobby project.
+              You can even set up swiggy yourself by following the insructions in the projects repo page.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
         <a href="https://www.github.com/NickBurness" target="_blank">
-          <i class="fab fa-github"></i>
+          <i class="fab fa-github github"></i>
+        </a>
+        <a href="https://uk.linkedin.com/in/nicholas-burness-699aa6190" target="_blank">
+          <i class="fab fa-linkedin linkedin"></i>
         </a>
         <a href="https://www.twitter.com/cleanCodeNick" target="_blank">
-          <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitter twitter"></i>
         </a>
-      </section>
+      </footer>
+      <a onclick="scrollToTopOfPage()" id="scrollButton" title="Go to the top of the page"><i class="fas fa-arrow-up"></i></a>
     </section>
   </body>
   <script src="site.js" type="text/javascript"></script>
